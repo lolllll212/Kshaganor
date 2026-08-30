@@ -1,0 +1,25 @@
+{
+	admin off
+}
+
+:{$PORT:8080} {
+	root * /usr/share/caddy
+	encode gzip zstd
+	try_files {path} {path}.html {path}/
+	file_server
+
+	header {
+		X-Content-Type-Options nosniff
+		Referrer-Policy strict-origin-when-cross-origin
+		X-Frame-Options SAMEORIGIN
+		-Server
+	}
+
+	@static path *.css *.js *.jpg *.jpeg *.png *.svg *.webp *.ico *.woff2
+	header @static Cache-Control "public, max-age=31536000, immutable"
+
+	handle_errors {
+		rewrite * /404.html
+		file_server
+	}
+}

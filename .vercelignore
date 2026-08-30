@@ -1,0 +1,11 @@
+node_modules
+.git
+Dockerfile
+.dockerignore
+Caddyfile
+railway.toml
+README.md
+package.json
+package-lock.json
+.env
+.env.*
