@@ -1,6 +1,6 @@
-# Kshaganor
+# KHSHAGNOR
 
-Static website for **Kshaganor Import & Export Pvt. Ltd.** — import, export, and production.
+Static website for **KHSHAGNOR Import & Export Pvt. Ltd.** — import, export, and production.
 
 Ready to deploy on **Vercel** or **Railway**. No database, no env secrets.
 
