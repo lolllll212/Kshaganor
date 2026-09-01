@@ -1,8 +1,8 @@
 {
-  "name": "kshaganor",
+  "name": "khshagnor",
   "private": true,
   "version": "1.0.0",
-  "description": "Kshaganor Import, Export & Production — company website",
+  "description": "KHSHAGNOR Import, Export & Production — company website",
   "scripts": {
     "start": "serve . -l tcp://0.0.0.0:${PORT:-3000}",
     "dev": "serve . -l tcp://0.0.0.0:8080"
